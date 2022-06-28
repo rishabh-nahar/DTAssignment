@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script defer src="./myScripts.js"></script>
+
+
+
+</head>
+<body>
+    
+
+    <nav>
+        <div class="left logo">
+            <div class="logo-container">
+                <img src="./media/logo.svg" alt="">
+            </div>
+        </div>
+        <div class="right elements">
+            <div class="icons"><i class="fa fa-lg fa-home"></i></div>
+            <div class="icons"><i class="fa fa-lg fa-screwdriver-wrench"></i></div>
+            <div class="icons"><i class="fa fa-lg fa-bell"></i></div>
+            <div class="icons"><img src="" height="10px" width="17px" /></div>
+            <div class="ellipsis"><i class="fa fa-lg fa-ellipsis-v"></i></div>
+        </div>
+    </nav>
+
+
+    <div class="sidebar journey-board collapsed-journey-board">
+        <div class="wrapper">
+            <div class="container">
+                
+                <div class="title">
+                    <div class="text">
+                        JOURNEY BOARD
+                    </div>
+                    <div class="ham-icon">
+                        <i onclick="toggleJourneyBoard()" class="fa fa-bars"></i>
+                    </div>
+                </div>
+            
+                <div class="task-lists hide-show" id="task_lists">
+                    <ol>
+                        <li class="li ol-lis">
+                            <a class="ol-li">
+                                <b>demo task</b>
+                            </a>
+                            <div>
+                                <ul>    
+                                    <li class="li ul-li"><a href="">task Heading 1</a></li>
+                                    <li class="li ul-li"><a href="">task Heading 2</a></li>
+                                    <li class="li ul-li"><a href="">task Heading 3</a></li>
+                                    <li class="li ul-li"><a href="">task Heading 4</a></li>
+                                    <li class="li ul-li"><a href="">task Heading 5</a></li>
+                                    <li class="li ul-li"><a href="">task Heading 6</a></li>
+                                    <li class="li ul-li"><a href="">task Heading 7</a></li>
+                                    <li class="li ul-li"><a href="">task Heading 8</a></li>
+                                    <li class="li ul-li"><a href="">task Heading 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="collapsed-task">
+                    <div class="tasks">
+                        1
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="wrapper">
+            <div class="container">
+
+                <div class="head">
+                    You Are Taking Challanges Of New Project
+                </div>
+                <div class="task-title" id="task_title">
+
+                </div>
+                <div class="task-container-group">
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="next-bttn">
+        <div class="blue-bttn">
+            <button class="bttn">
+                Next
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

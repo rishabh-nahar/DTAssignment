@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --background-col-1:#0029FF;
+    --background-col-2:#F0F0F0;
+}
+nav{
+    background-color: var(--background-col-2);
+    color: white;
+    height: 90px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% auto;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+nav .left{
+    justify-self: center;
+}
+nav .right{
+    display: flex;
+    height: 90px;
+    justify-self: end;
+    align-items: center;
+    gap: 1vw;
+    padding: 1vw
+}
+nav .icons{
+    background-color: var(--background-col-1);
+    padding: 10px 10px; 
+    margin: auto;
+    border-radius: 100%;
+}
+
+nav  .ellipsis{
+    color: var(--background-col-1)
+}
+
+.main{
+    width: 100%;
+
+}
+.main .wrapper{
+    padding: 132px 167px 67px 177px;
+}
+.main .wrapper .container{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+    padding: 0 0 74px 0;
+}
+.main .wrapper .container .head{
+    background-color: var(--background-col-1);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    color : white;
+}
+.task-title{
+    padding: 20px 0 ;
+    text-align: center;
+}
+.main .wrapper .container .task-container-group{
+
+    display: grid;
+    grid-template-columns: calc(50% - 24px) calc(50% - 24px);
+    row-gap: 166px ;
+    column-gap:48px;
+}
+
+.task-container-group .task-container-wrapper{
+    padding: 0vh 1vw;
+}
+.main .task-container-group .task-container{
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);;
+}
+.main .task-container-group .task-container .heading{
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    color : white;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.main .task-container-group .task-container .content{
+    padding: 1vh 1vw;
+}
+.main .content .task-inp {
+    padding:3vh 1vw;
+}
+.main .content .task-inp textarea{
+    width: 100%;
+    height: 240px;
+    
+    resize: none; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+    border:transparent;  
+    border-radius: 10px;
+    padding:1vh 1vw;
+}
+.blue-bttn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 167px 185px 0px;;
+
+}
+.blue-bttn .bttn{
+    background-color: var(--background-col-1);
+    border: transparent;
+    padding:20px 15px 25px 17px;
+    color : white;
+    border-radius:5px
+}
+.content .input-bg{
+    background-color: #F0F0F0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    border-radius:15px;
+    padding: 0;
+}
+.content .input-bg .title{
+    padding: 5px 1vw;
+}
+.content .input-bg .task-small-inp textarea{
+    width: 100%;
+    height: 100px;
+    resize: none; 
+    border:transparent;  
+    border-radius: 15px;
+    padding:1vh 1vw;
+}
+
+.content .option-container select{
+    padding:10px 5px;
+    border-radius: 5px;
+    border: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.353);
+}
+
+.down-arrow{
+    text-align: right;
+    padding-right: 2vw;
+    cursor: pointer;
+}
+
+.main .container img:not(.logo-container img), embed, iframe{
+    width: 100%;
+    height: 280px;
+}
+.hide-show{
+    display: none;
+}
+.show-hide{
+    visibility: hidden;
+}
+
+.journey-board{
+    position: absolute;
+    padding-top:133px;
+    width: 220px;
+    transition: 0.5s;
+}
+.journey-board .title{
+    background-color: black;
+    color: white; 
+    display: grid;
+    grid-template-columns: 170px auto;
+    padding: 10px 1vw;
+    /* justify-content: ; */
+    align-items: center;
+    border-top-right-radius: 10px;
+}
+.journey-board .title .text{
+    text-align: center;
+}
+.journey-board .ham-icon{
+    cursor: pointer;
+}
+.task-lists{
+    background-color: white;
+    padding:1vh 20px;
+}
+
+li{
+    padding-left:10px;
+}
+.li{
+    padding: 10px;
+}
+.ul-li{
+    list-style-type: disc;
+    padding:10px;
+}
+.li a{
+    border-bottom: 1px solid;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.collapsed-journey-board{
+    left: -165px;
+}
+
+.collapsed-task{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 50px 10px;
+    background-color: white;
+}
+.collapsed-task .tasks{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--background-col-1);
+    color: var(--background-col-1)
+}
